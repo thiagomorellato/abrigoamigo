@@ -3,7 +3,7 @@
 #Configurações iniciais
 import google.generativeai as genai
 
-GOOGLE_API_KEY="AIzaSyAADxHFaangSczoSim6KiVuFOsPytB-JV8"
+GOOGLE_API_KEY="API_KEY"
 genai.configure(api_key=GOOGLE_API_KEY)
 #Listando os modelos disponíveis
 #for m in genai.list_models():
@@ -24,7 +24,7 @@ model = genai.GenerativeModel(model_name='gemini-1.0-pro',
                                   generation_config=generation_config,
                                   safety_settings=safety_settings,)
 chat = model.start_chat(history=[    
-   # {
+   #oi {
    #     "role": "user",
    #     "parts": ["Você é um gestor de uma plataforma de abrigos de animais da enchente de 2024 no rio grande do sul chamada Abrigo Amigo"]
     #},
